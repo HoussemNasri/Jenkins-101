@@ -14,6 +14,8 @@ pipeline {
                 sh '''
                 echo "Constructing........."
                 echo "Automatically triggered?"
+                cd app
+                pip install -r requirements.txt
                 '''
             }
         }
@@ -22,6 +24,8 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 echo "Heyyyyy"
+                python3 hello.py
+                python3 hello.py --name=Brens
                 '''
             }
         }

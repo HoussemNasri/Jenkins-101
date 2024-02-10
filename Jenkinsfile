@@ -13,6 +13,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 echo "Constructing........."
+                echo "Automatically triggered?"
                 '''
             }
         }
